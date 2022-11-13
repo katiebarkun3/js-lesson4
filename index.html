@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson4</title>
+</head>
+<body>
+    <script>
+       /* 1 */
+        /* let age = prompt('введите свой возраст');
+        if(age >= 0 && age <= 2 ) {
+            console.log('вы ребёнок');
+        }
+        if (age >= 3 && age <= 11) {
+            console.log('я не знаю кто вы, тут не написано');
+        }
+        if (age >= 12 && age <= 18) {
+            console.log('вы подросток');
+        }
+        if (age >= 18 && age <= 60) {
+            console.log('вы взрослый');
+        }
+        if (age >= 60 && age <= 150) {
+            console.log('вы пенсионер');
+        }
+        if (age > 150) {
+            console.log('у меня к вам вопросы');
+        } */
+
+        /* 2 */
+        /* let a = +prompt('введите число от 0 до 9');
+        switch (a) {
+            case 1:
+                console.log('!');
+            break;
+            case 2:
+                console.log('@');
+            break;
+            case 3:
+                console.log('#');
+            break;
+            case 4:
+                console.log('$');
+            break;
+            case 5:
+                console.log('%');
+            break;
+            case 6:
+                console.log('^');
+            break;
+            case 7:
+                console.log('&');
+            break;
+            case 8:
+                console.log('*');
+            break;
+            case 9:
+                console.log('(');
+            break;
+            case 0:
+                console.log(')');
+            default: 
+                console.log('неверное значение');
+        } */
+
+        /* 3 */
+        /* let a = prompt('введите трёхзначное число');
+        let splits = a.split('');
+        if (a[0] == a[1] || a[0] == a[2] || a[1] == a[2] ) {
+            console.log('есть одинаковые цифры');
+        }
+        else {
+            console.log('одинаковых цифр нет');
+        }  *
+        
+        /* 4 */
+        /* let a = +prompt('введите год');
+        let b = a % 100;
+        let c = a % 4;
+        let d = a % 400;
+        if (d == 0 || (c == 0 && b != 0)) {
+            console.log('год високосный');
+        }
+        else {
+            console.log('год не високосный');
+        } */
+
+        /* 5 */
+        /* let a = prompt('введите пятизначное число');
+        let arr = a.split('');
+        let arr2 = arr.slice(0, 2);
+        let arr3 = arr.slice(3, 5);
+        arr3.reverse();
+        if (arr2[0] == arr3[0] && arr2[1] == arr3[1]) {
+            console.log('число палиндром');
+        }
+        else {
+            console.log('число не палиндром');
+        } */
+
+        /* 6 */
+        /* let sum = prompt('введите сумму в долларах');
+        let a = prompt('в какую валюту перевести? 1 - EUR; 2 - UAN; 3 - AZN; введите число');
+        let b;
+        if (a == 1) {
+            b = sum * 0.96;
+            console.log(b);
+        }
+        if (a == 2) {
+            b = sum * 7.11;
+            console.log(b);
+        }
+        if (a == 3) {
+            b = sum * 1.70;
+            console.log(b);
+        } */
+
+        /* 7 */
+       /*  let sum = prompt('введите сумму покупки');
+        let a;
+        if(sum >= 200 && sum <= 300) {
+            a = sum * 0.03;
+            console.log(a);
+        }
+        if(sum >= 300 && sum <= 500) {
+            a = sum * 0.05;
+            console.log(a);
+        }
+        if(sum >= 500) {
+            a = sum * 0.07;
+            console.log(a);
+        } */
+
+        /* 8 */
+        /* let S = prompt('введите длину окружности'); // S = 2pr; r = S/2p 
+        let P = prompt('введите периметр квадрата');
+        let a = P / 4;
+        let d = 2*(S / 2 * Math.PI);
+        if (d <= a) {
+            console.log('данная окружность может поместиться в данный квадрат');
+        }
+        else {
+            console.log('данная окружность не может поместиться в данный квадрат');
+        } */
+
+        /* 9 */
+       /* let q1 = +prompt('дайте ответ на вопрос: 2 + 2? 1 вариант - 0; 2 вариант - 3; 3 вариант - 4; (укажите номер варианта ответа цифрой)');
+        let score = 0;
+       switch(q1){
+            case 3:
+                score += 2;
+                break;
+                default: 
+                break;
+        }
+        let q2 = +prompt('дайте ответ на вопрос: какой сейчас год? 1 вариант - 4819; 2 вариант - 2022; 3 вариант - 1990; (укажите номер варианта ответа цифрой)');
+        switch(q2){
+            case 2:
+                score += 2;
+                break;
+                default: 
+                break;
+        }
+        let q3 = +prompt('дайте ответ на вопрос: какой язык мы изучаем? 1 вариант - С++; 2 вариант - я хз вообще; 3 вариант - JavaScript <333; (укажите номер варианта ответа цифрой)');
+        switch(q3){
+            case 3:
+                score += 2;
+                break;
+                default: 
+                break;
+        }
+        alert(`мои воздравления, ваш счёт: ${score}`); */
+
+        /* 10 */
+        /* let a = prompt('введите дату (пример: 13.11.2022)');
+        let arr = a.split('.')
+        console.log(arr);
+        switch (arr[1]) {
+            case '04':
+            case '06':
+            case '09':
+            case '11':
+            if(arr[0] >= '31') {
+                console.log('такой даты не существует');
+            }
+                break;
+            default:
+                break;
+        }
+        if(arr[1] > '12' || arr[0] > '31') {
+            console.log('такой даты быть не может');
+        }
+
+        if(arr[2] % 400 == 0 || (arr[2] % 4 == 0 && arr[2] % 100 != 0)) {
+            if(arr[0] > '30' && arr[1] == '02') {
+                console.log('такой даты не может быть');
+            }
+            if(arr[0] > '29' && arr[1] == '02') {
+                console.log('такой даты не может быть');
+            }
+        }
+        // выведение результата 
+        if(arr[0] == '30' && (arr[1] == '04' || arr[1] == '06' || arr[1] == '09'|| arr[1] == '11')) {
+            arr[0] = '01';
+        }
+        if (arr[0] == '31' && (arr[1] == '01' || arr[1] == '03' || arr[1] == '05' || arr[1] == '07' || arr[1] == '08' || arr[1] == '10' || arr[1] == '12' || )) {
+            arr[0] = '01';
+        }
+        if (arr[0] == '29' && arr[1] == '02' && arr[2] % 400 == 0 || (arr[2] % 4 == 0 && arr[2] % 100 != 0)) {
+            arr[0] = '01';
+        }
+        if (arr[0] == '29' && arr[1] == '02') {
+            arr[0] = '01';
+        } */
+
+
+    </script>
+</body>
+</html>
